@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly attempting to modify the content of a div using innerHTML without selecting the element first
+    innerHTML = "This text should replace the content.";
+  </script>
+</body>
+</html>
