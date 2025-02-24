@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correctly select the div element before modifying its innerHTML
+    document.getElementById("myDiv").innerHTML = "This text should replace the content.";
+  </script>
+</body>
+</html>
